@@ -6,6 +6,10 @@
 **/App_Data/Logs/
 **/App_Data/[Pp]review/
 **/App_Data/TEMP/
+**/App_Data/Models/
+**/App_Data/Umbraco.sdf
+**/App_Browsers/
+**/App_Plugins/ModelsBuilder/
 Cached/
 
 # Ignore Umbraco content cache file
@@ -66,3 +70,17 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+**/.vs/
+**/packages/
+**/App_Data/NuGetBackup/
+**/bin/
+**/default.aspx
+**/Global.asax
+**/obj/
+**/Umbraco/
+**/Umbraco_Client/
+**/Views/Partials/Grid/
+
+**/web.config
+**/web.*.config
