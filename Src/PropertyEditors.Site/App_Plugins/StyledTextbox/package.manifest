@@ -6,11 +6,17 @@
 			icon: "icon-brush",
 			group: "common",
 			editor: {
-				valueType: "string",
+				valueType: "text",
 				view: "~/app_plugins/StyledTextbox/html/styledText.html"
 			},
 			prevalues: {
 				fields: [
+					{
+						label: "Multi-line",
+						description: "Should the control render as a single-line input or a multi-line textarea?",
+						key: "multiLine",
+						view: "boolean"
+					},
 					{
 						label: "Style",
 						description: "Additional styles to apply",
@@ -39,11 +45,12 @@
 						label: "Full Width",
 						description: "Make the box go right accross the editor window (like a grid control does)",
 						key: "hideLabel",
-						view: "boolean",
+						view: "boolean"
 					}
 				]
 			},
 			defaultconfig: {
+				multiLine: 0,
 				style: "font-size: 36px; line-height: 45px; font-weight: bold",
 				charCount: 0,
 				enforceLimit: 0,
